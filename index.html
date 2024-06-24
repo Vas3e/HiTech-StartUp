@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StratUp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header style="background-color: black;" class="d-none d-md-block">
+        <div class="container">
+            <div class="row py-2">
+                <div class="col-6 text-center text-lg-start">
+                    <div class="h-contact-dtls d-xl-flex">
+                        <div class="map"><i class="fa-solid fa-location-dot me-2"></i><a href="https://maps.app.goo.gl/AvmvDd4nva3nzJ72A" class="me-xl-4">No.05, Vaitheeswaran Nagar, TPT</a></div>
+                        <div class="mail"><i class="fa fa-envelope me-2" aria-hidden="true"></i><a href="mailto:vasanthsankar50@gmail.com">vasanthsankar50@gmail.com</a></div>
+                    </div>
+                </div>
+                <div class="col-4 d-none d-xl-block">
+                    <div class="h-disclimer">
+                        <marquee class="text-success" behavior="scroll" direction="" scrollamount="10" scrolldelay="60"><span class="text-light fw-bold">Note: </span>Now you can download our Official App on Playstore and App Store.</marquee>
+                    </div>
+                </div>
+                <div class="col-6 col-xl-2 d-flex justify-content-center align-items-center justify-content-lg-end">
+                    <div class="h-social-medias">
+                        <a href="https://wa.me/+91-9750404276/?text=Hi! I'am intrested to know your services"><i class="fa-brands fa-whatsapp p-2 rounded-circle bg-light" style="color: #005eff;"></i></a>
+                        <a class="mx-2" href="https://www.x.com/direct"><i class="fa-brands fa-twitter p-2 rounded-circle bg-light" style="color: #005eff;" aria-hidden="true"></i></a>
+                        <a class="me-2" href="https://www.instagram.com/direct/inbox/"><i class="fa-brands fa-instagram p-2 rounded-circle bg-light" style="color: #005eff;" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/feed"><i class="fa-brands fa-linkedin p-2 rounded-circle bg-light" style="color: #005eff;" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg sticky-top px-3">
+        <div class="container">
+            <a href="" class="navbar-brand"><h1 style="color:#35ca94;"><span class="text-light">High</span>Tech</h1></a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#bar" style="color: #ffffff;">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fa-solid fa-bars " style="color: #ffffff;"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="bar">
+            <ul class="navbar-nav ms-auto m-xl-auto">
+                <li class="nav-item"><a class="nav-link nav-active" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item dropdown"><span class="nav-link dropdown-toggle text-light span-drop" data-bs-toggle="dropdown" href="#">Pages</span>
+                    <ul class="dropdown-menu bg-dark">
+                        <li class="dropdown-item bg-dark"><a href="#ourblogs" class="nav-link">Our Blog</a></li>
+                        <li class="dropdown-item bg-dark"><a href="#ourteam" class="nav-link">Our Team</a></li>
+                        <li class="dropdown-item bg-dark"><a href="#reviews" class="nav-link">Reviews</a></li>
+                        <li class="dropdown-item bg-dark"><a href="#" class="nav-link">Portss</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#contactus">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="nav-dtls text-light d-none d-xl-flex align-items-center">
+            <div class="phone"><i class="fa fa-phone" aria-hidden="true"> </i><sup><i class="fa-solid fa-comment-dots"></i></i></sup></div>
+            <div class="px-3">
+                <p class="m-0">Have any Questions?</p>
+                <p class="m-0"><a href="" style="color: #35ca94; text-decoration: none;">Call: +91-9750404276</a></p>
+            </div>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        </div>
+    </nav>
+    
+    <div class="hero" id="home">
+        <div class="carousel slide" data-bs-ride="carousel" id="slider1">
+            <div class="carousel-inner">
+                <div class="carousel-item c-item1 active">
+                    <div class="position-relative">
+                        <img class="c-img img-fluid " src="img/carousel-1.jpg" alt="image">
+                        <div class="slide-details text-center position-absolute">
+                            <h4 class="" style="color: #35ca94;">Best IT Solutions</h4>
+                            <h1 data-aos="fade-left" class="m-0 display-4 text-light fw-bold">An Innovative IT</h1>
+                            <h1 data-aos="fade-right" class="display-4 text-light fw-bold">Solutions Agency</h1>
+                            <p class="text-light">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus 
+                                ut interdum. Pellentesque aliquam dolor eget urna ultricies 
+                                tincidunt.</p>
+                            <div class="slide-btns">
+                                <button data-aos="fade-left" class="btn hero-btn-1 fw-bold rounded-pill me-3 px-4 py-3">Read More</button>
+                                <button data-aos="fade-right" class="btn hero-btn-2 fw-bold rounded-pill ms-3 px-4 py-3">Contact Us</button>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="carousel-item c-item1">
+                    <div class="position-relative">
+                        <img class="c-img img-fluid " src="img/carousel-2.jpg" alt="image">
+                        <div class="slide-details text-center position-absolute">
+                            <h4 class="" style="color: #35ca94;">Best IT Solutions</h4>
+                            <h1 data-aos="fade-left" class="m-0 display-4 text-light fw-bold">An Innovative IT</h1>
+                            <h1 data-aos="fade-right" class="display-4 text-light fw-bold">Solutions Agency</h1>
+                            <p class="text-light">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus 
+                                ut interdum. Pellentesque aliquam dolor eget urna ultricies 
+                                tincidunt.</p>
+                            <div class="slide-btns">
+                                <button data-aos="fade-left" class="btn hero-btn-1 fw-bold rounded-pill me-3 px-4 py-3">Read More</button>
+                                <button data-aos="fade-right" class="btn hero-btn-2 fw-bold rounded-pill ms-3 px-4 py-3">Contact Us</button>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="carousel-control-prev prev" data-bs-target="#slider1" data-bs-slide="prev">
+                <!-- <span class="carousel-control-prev-icon"></span> -->
+                <!-- <i class="fa-solid fa-circle-arrow-left fs-2 rounded-end-pill" style="color: #ffffff;"></i> -->
+                <i class="fa-solid fa-angle-left fs-1 rounded-end-pill" style="color: #ffffff;"></i>
+            </button>
+            <button type="button" class="carousel-control-next" data-bs-target="#slider1" data-bs-slide="next">
+                <!-- <span class="carousel-control-next-icon "></span> -->
+                <i class="fa-solid fa-angle-right fs-1 rounded-start-pill" style="color: #ffffff;"></i>
+            </button>
+        </div>
+    </div>
+
+    <section class="abt-bar py-5">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+                <div class="col">
+                    <div class="abt-bar-dtls d-flex align-items-center justify-content-center gap-3">
+                        <h1 class="fw-bold">100</h1>
+                        <h5 class="text-light">adipisicing elit. Velit, officiis</h5>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="abt-bar-dtls d-flex align-items-center justify-content-center gap-3">
+                        <h1 class="fw-bold">25</h1>
+                        <h5 class="text-light">adipisicing elit. Velit, officiis</h5>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="abt-bar-dtls d-flex align-items-center justify-content-center gap-3">
+                        <h1 class="fw-bold">130</h1>
+                        <h5 class="text-light">adipisicing elit. Velit, officiis</h5>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="abt-bar-dtls d-flex align-items-center justify-content-center gap-3">
+                        <h1 class="fw-bold">0</h1>
+                        <h5 class="text-light">adipisicing elit. Velit, officiis</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us-sec mt-5" id="about">
+        .<div class="container mt-5">
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-5 abt-img-col">
+                    <div class="position-relative" style="margin-bottom: 30%;">
+                        <img src="img/about-1.jpg" class="img-fluid w-75 rounded" alt="">
+                        
+                            <img src="img/about-2.jpg" class="img-fluid w-75 rounded position-absolute"  style="top: 25%; left: 25%;" alt="">
+                        
+                    </div>
+                </div>
+                <div class=" col-12 col-md-8 col-lg-7">
+                    <div class="abt-txt">
+                        <h5 class="fw-bold" style="color: #1843b6;">About Us</h5>
+                        <h1>About HighTech Agency And It's Innovative IT Solutions</h1>
+                        <p class="pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing 
+                            elit. Sed efficitur quis purus ut interdum. Pellentesque 
+                            aliquam dolor eget urna ultricies tincidunt. Nam volutpat 
+                            libero sit amet leo cursus, ac viverra eros tristique. 
+                            Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque 
+                            quam nec elementum viverra. Suspendisse viverra hendrerit diam 
+                            in tempus. Etiam gravida justo nec erat vestibulum, et malesuada 
+                            augue laoreet. <br> <br>Pellentesque aliquam dolor eget urna 
+                            ultricies tincidunt. Nam volutpat libero sit amet leo cursus, 
+                            ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida 
+                            eros. Proin scelerisque quam nec elementum viverra. Suspendisse 
+                            viverra hendrerit diam in tempus</p>
+                            <a href="#" class="btn text-light fw-bold py-3 px-5 rounded-pill">More Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-services-sec text-center" id="services">
+        <h5 class="fw-bold" style="color: #1843b6;">Our Services</h5>
+        <h2>Services Built Specifically For Your Business</h2>
+        <div class="container">
+            <div class="row mt-5 g-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                    <div class="services p-5 shadow-lg rounded-3">
+                        <i class="fa-solid fa-code services-icon" style="color: #1843b6;"></i>
+                        <h4 class="p-3">Web Design</h4>
+                        <p class="text-muted py-3 ">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut 
+                            interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                        <a href="#" class="rounded-pill px-3 py-3"><button class="btn fw-bold text-light">Read More</button></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="services p-5 shadow-lg rounded-3">
+                        <i class="fa-solid fa-file-code services-icon" style="color: #1843b6;"></i>
+                        <h4 class="p-3">Web Design</h4>
+                        <p class="text-muted py-3 ">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut 
+                            interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                        <a href="#" class="rounded-pill px-3 py-3"><button class="btn fw-bold text-light">Read More</button></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="services p-5 shadow-lg rounded-3">
+                        <i class="fa-solid fa-up-right-from-square services-icon" style="color: #1843b6;"></i>
+                        <h4 class="p-3">Web Design</h4>
+                        <p class="text-muted py-3 ">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut 
+                            interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                        <a href="#" class="rounded-pill px-3 py-3"><button class="btn fw-bold text-light">Read More</button></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="services p-5 shadow-lg rounded-3">
+                        <i class="fa-solid fa-user-secret services-icon" style="color: #1843b6;"></i>
+                        <h4 class="p-3">Web Design</h4>
+                        <p class="text-muted py-3 ">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut 
+                            interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                        <a href="#" class="rounded-pill px-3 py-3"><button class="btn fw-bold text-light">Read More</button></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="services p-5 shadow-lg rounded-3">
+                        <i class="fa-solid fa-envelope-open services-icon" style="color: #1843b6;"></i>
+                        <h4 class="p-3">Web Design</h4>
+                        <p class="text-muted py-3 ">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut 
+                            interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                        <a href="#" class="rounded-pill px-3 py-3"><button class="btn fw-bold text-light">Read More</button></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="services p-5 shadow-lg rounded-3">
+                        <i class="fa-solid fa-laptop-code services-icon" style="color: #1843b6;"></i>
+                        <h4 class="p-3">Web Design</h4>
+                        <p class="text-muted py-3 ">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut 
+                            interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
+                        <a href="#" class="rounded-pill px-3 py-3"><button class="btn fw-bold text-light">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-projects-sec" id="projects">
+        <div class="project-hd">
+            <h5 class="fw-bold" style="color: #1843b6;">Our Projects</h5>
+            <h1 class="fw-bold mt-4">Services Built Specifically <br> For Your Business</h1>
+        </div>
+        <div class="container mt-5">
+            <div class="row g-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
+                <div class="col">
+                    <div class="project-dtls position-relative">
+                        <img class="img-fluid p-3" src="img/project-1.jpg" alt="image">
+                        <div class="projects-hover-dtls ">
+                            <div class="green position-absolute"></div>
+                            <div class="project-dtls-text p-3 text-center position-absolute rounded-3">
+                                <h5>Cyber Security</h5>
+                                <p>Cyber Secuity Core</p>
+                            </div>
+                            <div class="blue position-absolute"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="project-dtls position-relative">
+                        <img class="img-fluid p-3" src="img/project-2.jpg" alt="image">
+                        <div class="projects-hover-dtls ">
+                            <div class="green position-absolute"></div>
+                            <div class="project-dtls-text p-3 text-center position-absolute rounded-3">
+                                <h5>Cyber Security</h5>
+                                <p>Cyber Secuity Core</p>
+                            </div>
+                            <div class="blue position-absolute"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="project-dtls position-relative">
+                        <img class="img-fluid p-3" src="img/project-3.jpg" alt="image">
+                        <div class="projects-hover-dtls ">
+                            <div class="green position-absolute"></div>
+                            <div class="project-dtls-text p-3 text-center position-absolute rounded-3">
+                                <h5>Cyber Security</h5>
+                                <p>Cyber Secuity Core</p>
+                            </div>
+                            <div class="blue position-absolute"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="project-dtls position-relative">
+                        <img class="img-fluid p-3" src="img/project-4.jpg" alt="image">
+                        <div class="projects-hover-dtls ">
+                            <div class="green position-absolute"></div>
+                            <div class="project-dtls-text p-3 text-center position-absolute rounded-3">
+                                <h5>Cyber Security</h5>
+                                <p>Cyber Secuity Core</p>
+                            </div>
+                            <div class="blue position-absolute"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="project-dtls position-relative">
+                        <img class="img-fluid p-3" src="img/project-5.jpg" alt="image">
+                        <div class="projects-hover-dtls ">
+                            <div class="green position-absolute"></div>
+                            <div class="project-dtls-text p-3 text-center position-absolute rounded-3">
+                                <h5>Cyber Security</h5>
+                                <p>Cyber Secuity Core</p>
+                            </div>
+                            <div class="blue position-absolute"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="project-dtls position-relative">
+                        <img class="img-fluid p-3" src="img/project-6.jpg" alt="image">
+                        <div class="projects-hover-dtls ">
+                            <div class="green position-absolute"></div>
+                            <div class="project-dtls-text p-3 text-center position-absolute rounded-3">
+                                <h5>Cyber Security</h5>
+                                <p>Cyber Secuity Core</p>
+                            </div>
+                            <div class="blue position-absolute"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-blog-sec" id="ourblogs">
+            <div class="our-blog-hd text-center mt-5">
+                <h5 class="fw-bold" style="color: #1843b6;">Our Blog</h5>
+                <h1 class="fw-bold mt-4">Latest Blogs &  News</h1>
+            </div>
+        <div class="container">
+            <div class="row row-cols-md-2 row-cols-lg-3">
+                <div class="col blog-col">
+                    <div class="card position-relative">
+                        <p class="position-absolute ledgend text-light py-3 px-4 rounded-3">Designing</p>
+                        <img src="img/blog-1.jpg" alt="blog_image">
+                        <div class="card-buttons d-flex align-items-center justify-content-around">
+                            <a href="" class="btn card-left-btn me-5 rounded-pill">Read More<i class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <span href="" class="card-right-btn ms-5 rounded-pill d-flex align-items-center">
+                                <div class="card-social-btns">
+                                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook-f" style="color: #005eff;"></i></a>
+                                    <a class="px-2" href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp" style="color: #09ff00;"></i></a>
+                                    <a class="" href="https://www.x.com/direct"><i class="fa-brands fa-twitter" style="color: #8adbfc;" aria-hidden="true"></i></a>
+                                </div>
+                                <span class="share-btn text-decoration-none" href="">Share<i class="fa-solid fa-share ps-2"></i></span>
+                            </span>
+                        </div>
+                        <div class="card-body position-relative text-center">
+                            <img src="img/testimonial-1.jpg" alt="image" class="test-img rounded-circle border border-5 border-light position-absolute">
+                            <h3>By Daniel Martin</h3>
+                            <p style="color: #35ca94;">23 April 2023</p>
+                            <p>Lorem ipsum dolor sit amet elit. Sed efficitur 
+                                quis purus ut interdum. Aliquam dolor eget 
+                                urna ultricies tincidunt libero sit amet</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-around bg-primary">
+                            <div class="card-footer-left">
+                                <i class="fa-solid fa-share card-footer-icon"></i>
+                                <span>5324 Share</span>
+                            </div>
+                            <div class="card-footer-right">
+                                <i class="fa-solid fa-comments card-footer-icon"></i>
+                                <span>5 Comments</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col blog-col">
+                    <div class="card position-relative">
+                        <p class="position-absolute ledgend text-light py-3 px-4 rounded-3">Development</p>
+                        <img src="img/blog-2.jpg" alt="blog_image">
+                        <div class="card-buttons d-flex align-items-center justify-content-around">
+                            <a href="" class="btn card-left-btn me-5 rounded-pill">Read More<i class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <span href="" class="card-right-btn ms-5 rounded-pill d-flex align-items-center">
+                                <div class="card-social-btns">
+                                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook-f" style="color: #005eff;"></i></a>
+                                    <a class="px-2" href="https://web.whatsapp.com/"><i class="fa-brands fa-whatsapp" style="color: #09ff00;"></i></a>
+                                    <a class="" href="https://www.x.com/direct"><i class="fa-brands fa-twitter" style="color: #8adbfc;" aria-hidden="true"></i></a>
+                                </div>
+                                <span class="share-btn text-decoration-none" href="">Share<i class="fa-solid fa-share ps-2"></i></span>
+                            </span>
+                        </div>
+                        <div class="card-body position-relative text-center">
+                            <img src="img/testimonial-2.jpg" alt="image" class="test-img rounded-circle border border-5 border-light position-absolute">
+                            <h3>By Daniel Martin</h3>
+                            <p style="color: #35ca94;">23 April 2023</p>
+                            <p>Lorem ipsum dolor sit amet elit. Sed efficitur 
+                                quis purus ut interdum. Aliquam dolor eget 
+                                urna ultricies tincidunt libero sit amet</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-around bg-primary">
+                            <div class="card-footer-left">
+                                <i class="fa-solid fa-share card-footer-icon"></i>
+                                <span>5324 Share</span>
+                            </div>
+                            <div class="card-footer-right">
+                                <i class="fa-solid fa-comments card-footer-icon"></i>
+                                <span>5 Comments</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col blog-col">
+                    <div class="card position-relative">
+                        <p class="position-absolute ledgend text-light py-3 px-4 rounded-3">Mobile App</p>
+                        <img src="img/blog-3.jpg" alt="blog_image">
+                        <div class="card-buttons d-flex align-items-center justify-content-around">
+                            <a href="" class="btn card-left-btn me-5 rounded-pill">Read More<i class="fa-solid fa-arrow-right ms-2"></i></a>
+                            <span href="" class="card-right-btn ms-5 rounded-pill d-flex align-items-center">
+                                <div class="card-social-btns">
+                                    <a href="www.facebook.com"><i class="fa-brands fa-facebook-f" style="color: #005eff;"></i></a>
+                                    <a class="px-2" href="https://wa.me/+91-9750404276/?text=Hi! I'am intrested to know your services"><i class="fa-brands fa-whatsapp" style="color: #09ff00;"></i></a>
+                                    <a class="" href="https://www.x.com/direct"><i class="fa-brands fa-twitter" style="color: #8adbfc;" aria-hidden="true"></i></a>
+                                </div>
+                                <span class="share-btn text-decoration-none" href="">Share<i class="fa-solid fa-share ps-2"></i></span>
+                            </span>
+                        </div>
+                        <div class="card-body position-relative text-center">
+                            <img src="img/testimonial-3.jpg" alt="image" class="test-img rounded-circle border border-5 border-light position-absolute">
+                            <h3>By Daniel Martin</h3>
+                            <p style="color: #35ca94;">23 April 2023</p>
+                            <p>Lorem ipsum dolor sit amet elit. Sed efficitur 
+                                quis purus ut interdum. Aliquam dolor eget 
+                                urna ultricies tincidunt libero sit amet</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-around bg-primary">
+                            <div class="card-footer-left">
+                                <i class="fa-solid fa-share card-footer-icon"></i>
+                                <span>5324 Share</span>
+                            </div>
+                            <div class="card-footer-right">
+                                <i class="fa-solid fa-comments card-footer-icon"></i>
+                                <span>5 Comments</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-team" id="ourteam">
+        <div class="container">
+            <div class="our-team-hd text-center mt-5">
+                <h5 class="fw-bold" style="color: #1843b6;">Our Team</h5>
+                <h1 class="fw-bold mt-4">Meet Our Expert Team</h1>
+            </div>
+            <div class="row">
+                <div class="owl-carousel owl-theme">
+                    <div class="col">
+                        <div class="item">
+                            <div class="card px-4 team-card text-center">
+                                <!-- <div class="card-header"></div> -->
+                                 
+                                <div class="card-body position-relative">
+                                    <!-- <div class="back-design"></div> -->
+                                    <img class="card-img-top rounded-circle team-img" src="img/team-2.jpg" alt="img">
+                                    <h1 class="mt-4">Nishanth</h1>
+                                    <p>Designation</p>
+                                    <div class="social-links">
+                                        <a class="btn" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a class="btn" href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        <a class="btn" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        <a class="btn" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="item">
+                            <div class="card px-4 team-card text-center">
+                                <!-- <div class="card-header"></div> -->
+                                 
+                                <div class="card-body position-relative">
+                                    <!-- <div class="back-design"></div> -->
+                                    <img class="card-img-top rounded-circle team-img" src="img/team-1.jpg" alt="img">
+                                    <h1 class="mt-4">Rohini</h1>
+                                    <p>Designation</p>
+                                    <div class="social-links">
+                                        <a class="btn" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a class="btn" href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        <a class="btn" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        <a class="btn" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="item">
+                            <div class="card px-4 team-card text-center">
+                                <!-- <div class="card-header"></div> -->
+                                 
+                                <div class="card-body position-relative">
+                                    <!-- <div class="back-design"></div> -->
+                                    <img class="card-img-top rounded-circle team-img" src="img/team-3.jpg" alt="img">
+                                    <h1 class="mt-4">Prakash Nolan</h1>
+                                    <p>Designation</p>
+                                    <div class="social-links">
+                                        <a class="btn" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a class="btn" href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        <a class="btn" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        <a class="btn" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="item">
+                            <div class="card px-4 team-card text-center">
+                                <!-- <div class="card-header"></div> -->
+                                 
+                                <div class="card-body position-relative">
+                                    <!-- <div class="back-design"></div> -->
+                                    <img class="card-img-top rounded-circle team-img" src="img/team-4.jpg" alt="img">
+                                    <h1 class="mt-4">Bala krish</h1>
+                                    <p>Designation</p>
+                                    <div class="social-links">
+                                        <a class="btn" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a class="btn" href="#"><i class="fa-brands fa-twitter"></i></a>
+                                        <a class="btn" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                        <a class="btn" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="review-sec" id="reviews">
+        <div class="container">
+            <div class="review-hd text-center mt-5 mb-5">
+                <h5 class="fw-bold" style="color: #1843b6;">Our Client Reviews</h5>
+                <!-- <h1 class="fw-bold mt-4"></h1> -->
+            </div>
+            <div class="row">
+                <div class="owl-carousel owl-theme">
+                    <div class="col px-3 py-5 border">
+                        <div class="item">
+                            <div class="reviews">
+                                <div class="review-top d-flex">
+                                    <div class="review-img me-5">
+                                        <img src="img/testimonial-1.jpg" alt="image">
+                                    </div>
+                                    <div class="review-names">
+                                        <h2>Samrat</h2>
+                                        <p>Profession</p>
+                                        <p>
+                                            <i class="fa-solid fa-star" style="color: #075ef2;"></i>
+                                            <i class="fa-solid fa-star" style="color: #075ef2;"></i>
+                                            <i class="fa-solid fa-star" style="color: #075ef2;"></i>
+                                            <i class="fa-solid fa-star" style="color: #075ef2;"></i>
+                                            <i class="fa-solid fa-star" style="color: #075ef2;"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <br>
+                                <div class="review-bottom">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing 
+                                        elit. Nostrum harum officiis numquam laborum? Omnis 
+                                        cumque magni beatae commodi, eaque qui.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col px-3 py-5 border">
+                        <div class="item">
+                            <div class="reviews">
+                                <div class="review-top d-flex">
+                                    <div class="review-img me-5">
+                                        <img src="img/testimonial-2.jpg" alt="image">
+                                    </div>
+                                    <div class="review-names">
+                                        <h2>Berlin</h2>
+                                        <p>Profession</p>
+                                        <p>
+                                            <i class="fa-solid fa-star" style="color: #075ef2;"></i>
+                                            <i class="fa-solid fa-star" style="color: #075ef2;"></i>
+                                            <i class="fa-solid fa-star" style="color: #075ef2;"></i>
+                                            <i class="fa-solid fa-star" style="color: #075ef2;"></i>
+                                            <i class="fa-solid fa-star" style="color: #075ef2;"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <br>
+                                <div class="review-bottom">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing 
+                                        elit. Nostrum harum officiis numquam laborum? Omnis 
+                                        cumque magni beatae commodi, eaque qui.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col px-3 py-5 border">
+                        <div class="item">
+                            <div class="reviews">
+                                <div class="review-top d-flex">
+                                    <div class="review-img me-5">
+                                        <img src="img/testimonial-3.jpg" alt="image">
+                                    </div>
+                                    <div class="review-names">
+                                        <h2>Ashwini</h2>
+                                        <p>Profession</p>
+                                        <p>
+                                            <i class="fa-solid fa-star" style="color: #075ef2;"></i>
+                                            <i class="fa-solid fa-star" style="color: #075ef2;"></i>
+                                            <i class="fa-solid fa-star" style="color: #075ef2;"></i>
+                                            <i class="fa-solid fa-star" style="color: #075ef2;"></i>
+                                            <i class="fa-solid fa-star" style="color: #075ef2;"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <br>
+                                <div class="review-bottom">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing 
+                                        elit. Nostrum harum officiis numquam laborum? Omnis 
+                                        cumque magni beatae commodi, eaque qui.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col px-3 py-5 border">
+                        <div class="item">
+                            <div class="reviews">
+                                <div class="review-top d-flex">
+                                    <div class="review-img me-5">
+                                        <img src="img/testimonial-4.jpg" alt="image">
+                                    </div>
+                                    <div class="review-names">
+                                        <h2>Kailash</h2>
+                                        <p>Profession</p>
+                                        <p>
+                                            <i class="fa-solid fa-star" style="color: #075ef2;"></i>
+                                            <i class="fa-solid fa-star" style="color: #075ef2;"></i>
+                                            <i class="fa-solid fa-star" style="color: #075ef2;"></i>
+                                            <i class="fa-solid fa-star" style="color: #075ef2;"></i>
+                                            <i class="fa-solid fa-star" style="color: #075ef2;"></i>
+                                        </p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <br>
+                                <div class="review-bottom">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing 
+                                        elit. Nostrum harum officiis numquam laborum? Omnis 
+                                        cumque magni beatae commodi, eaque qui.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="form-sec" id="contactus">
+        <div class="container">
+            <div class="our-blog-hd text-center mt-5">
+                <h5 class="fw-bold" style="color: #1843b6;">Get in Touch</h5>
+                <h1 class="fw-bold mt-4">Contact for any Query</h1>
+                <p>The contact form is currently inactive. Get a functional 
+                    and working contact form with Ajax & PHP in a few minutes. 
+                    Just copy and paste the files, add a little code and you're 
+                    done. <a href="#" class="text-decoration-none">Download Now</a>.</p>
+            </div>
+            <div class="form-background">
+                <img class="img-fluid d-none d-md-block" src="img/background.jpg" alt="image">
+            </div>
+        </div>
+        <div class="container form-container">
+            <div class="row row-cols-1 row-cols-md-3 f-contact-dtls px-md-5 mb-5 g-4 justify-content-center">
+                <div class="col">
+                    <div class="bg-light justify-content-md-center rounded-5 form-address-details d-flex align-items-center">
+                        <a class="btn rounded-circle" href="#"><i class="fa-solid fa-location-dot"></i></a>
+                        <div class="form-address-dtls">
+                            <h2>Address</h2>
+                            <h5>23,Nss center, NY</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="bg-light justify-content-md-center rounded-5 form-phone-details d-flex align-items-center">
+                        <a class="btn rounded-circle" href="#"><i class="fa-solid fa-phone"></i></a>
+                        <div class="form-phone-right">
+                            <h2>Call Us</h2>
+                            <h5>+91-9750404276</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="bg-light justify-content-md-center rounded-5 form-email-details d-flex align-items-center">
+                        <a class="btn rounded-circle" href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        <div class="form-email-right">
+                            <h2>Email-Us</h2>
+                            <h5>vasanthsankar50@gmail.com</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row forms-div">
+                <div class="col">
+                    <iframe class="rounded-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7766.790743222401!2d79.30057023801085!3d13.263215341019194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad55001159f23f%3A0x6b8c666912964643!2sN%20D%20Raju%20farm%20house!5e0!3m2!1sen!2sin!4v1719213262024!5m2!1sen!2sin" width="550" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col">
+                    <div class="form-div">
+                        <form action="" class="form-control py-5">
+                            <input class="form-control w-75 py-3 mb-5" type="text" placeholder="Enter Name">
+                            <input class="form-control w-75 py-3 mb-5" type="email" placeholder="Enter Your Email">
+                            <select class="form-control w-75 py-3 mb-5" name="" id="">
+                                <option value="">Male</option>
+                                <option value="">Female</option>
+                                <option value="">Others</option>
+                            </select>
+                            <textarea class="form-control w-75 py-3 mb-5" name="" id="" placeholder="">Message</textarea>
+                            <button class="btn w-50 mb-4 p-4">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark pt-4">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-5 g-md-0">
+                <div class="col">
+                    <div class="footer-divs">
+                        <h1 class="text-light mb-3">High <span style="color: #35ca94;">Tech</span></h1>
+                        <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Soluta facere delectus qui placeat inventore 
+                        consectetur repellendus optio debitis.</p>
+                        <div class="footer-social-links">
+                            <a class="btn" href="www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a class="btn" href="https://wa.me/+91-9750404276/?text=Hi! I'am intrested to know your services"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a class="btn" href="https://www.instagram.com/direct/inbox/"><i class="fa-brands fa-instagram"></i></a>
+                            <a class="btn" href="https://www.linkedin.com/feed"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col footer-links">
+                    <div class="footer-divs">
+                        <h2>Short Link</h2>
+                        <p><i class="fa-solid fa-caret-right"></i><a href="#about">About Us</a></p>
+                        <p><i class="fa-solid fa-caret-right"></i><a href="#contactus">Contact Us</a></p>
+                        <p><i class="fa-solid fa-caret-right"></i><a href="#services">Our Services</a></p>
+                        <p><i class="fa-solid fa-caret-right"></i><a href="#projects">Our Projects</a></p>
+                        <p><i class="fa-solid fa-caret-right"></i><a href="#ourblogs">Latest Blogs</a></p>
+                    </div>
+                </div>
+                <div class="col footer-links">
+                    <div class="footer-divs">
+                        <h2>Help Link</h2>
+                        <p><i class="fa-solid fa-caret-right"></i><a href="#">Terms of Use</a></p>
+                        <p><i class="fa-solid fa-caret-right"></i><a href="#">Privacy Policy</a></p>
+                        <p><i class="fa-solid fa-caret-right"></i><a href="#">Helps</a></p>
+                        <p><i class="fa-solid fa-caret-right"></i><a href="#">FQAs</a></p>
+                        <p><i class="fa-solid fa-caret-right"></i><a href="#">Contact</a></p>
+                    </div>
+                </div>
+                <div class="col footer-contact-links">
+                    <div class="footer-divs">
+                        <h2 style="color: #35ca94; margin-bottom: 26px;">Contact Us</h2>
+                        <p class="pb-2"><a href="https://maps.google.com"><i class="fa-solid fa-location-dot pe-3"></i>123, Ny Street, NewYork</a></p>
+                        <p class="pb-2"><a href="tel:+91-9750404276"><i class="fa-solid fa-phone pe-3"></i>+91-9750404276</a></p>
+                        <p class="pb-2"><a href="mailto:vasanthsankar50@gmail.com"><i class="fa-solid fa-envelope pe-3"></i>vasanthsankar50@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 text-center footer-last">
+                <div class="col text-md-start">
+                    <p>&copy High Tech, <span>All right reserved</span></p>
+                </div>
+                <div class="col text-md-end">
+                    <p><span>Designed By</span>HTML Codex <span>Developed By</span> Be<i class="fa-solid fa-heart" style="color: #ff0000;"></i></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+          AOS.init();
+        </script>
+         <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBogGzK1qz5lR6/Z7PR5U4t6ikY2yZi1LVCC1HE7wIXH49z+" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12WQ33tR1xS2eSTWhjEk5aRdVuoK6mK8LBQtbE6p4dp/H2y3" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        var owl = $('.owl-carousel');
+ owl.owlCarousel({
+     items:3,
+     loop:true,
+     margin:10,
+     autoplay:true,
+     autoplayTimeout:3000,
+     autoplayHoverPause:true,
+     responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+ });
+ $('.play').on('click',function(){
+     owl.trigger('play.owl.autoplay',[1000])
+ })
+ $('.stop').on('click',function(){
+     owl.trigger('stop.owl.autoplay')
+ })
+
+ $(document).ready(function () {
+            $('.navbar-nav>li>a, .dropdown-menu>li>a').on('click', function(){
+                $('.navbar-collapse').collapse('hide');
+            });
+        });
+
+        
+     </script>
+</body>
+</html>
+
+
+<!-- LINE NUMBER 353 -->
+ <!-- LINE NUMBER 711 -->
